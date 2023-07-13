@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
- * main - A program that prints  line with printf function
- * Return: 0 (success)
+ * main - A program that print a line using the printf function
+ * Return: 0 (Success)
  */
 int main(void)
 {
-puts("\"with proper grammar, but the outcome is a piece of art,");
+printf("with proper grammar, but the outcome is a piece of art,\n");
 return (0);
