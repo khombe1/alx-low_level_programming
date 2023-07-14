@@ -7,9 +7,7 @@
  * Return: Always 0 (success)
  */
 
-
 int main(void)
-
 
 {
 	char low;
@@ -18,7 +16,7 @@ int main(void)
 	putchar(low);
 	for (low = 'A'; low <= 'Z'; low++)
 	putchar(low);
-	puitchar('\n');
+	putchar('\n');
 
 	return (0);
 }
