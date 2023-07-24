@@ -1,25 +1,20 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * print_rev - prints a string in reverse
- * @s: The string to print
- * Return: (void)
+ * _strcpy - copy a string
+ * @dest: Destination value
+ * @src: source value
+ * Return: pointer to dest
  */
-
-void print_rev(char *s)
-
+char *_strcpy(char *dest, char *src)
 {
-	int c = 0;
+	int i;
 
-	while (s[c] != '\n')
+	for (i = 0; src[i] != '\0'; i++)
 	{
-	c++;
+	dest[i] = src[i];
 	}
 
-	for (c -= 1; c >= 0; c--)
-	{
-	_putchar(s[c]);
-	}
-	_putchar('\n');
+	dest[i] = '\0';
+	return (dest);
 }
