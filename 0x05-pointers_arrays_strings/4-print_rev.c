@@ -1,9 +1,10 @@
 #include "main.h"
+#include "stdio.h"
 
 /**
- * print_rev - function that prints a string in reverse.
+ * print_rev -prints a string in reverse.
  * @s: The used string reference pointer
- * Return: 0
+ * Return: void
  */
 
 void print_rev(char *s)
@@ -12,13 +13,10 @@ void print_rev(char *s)
 
 	while (s[c] != '\0')
 	{
-	if (s[c] == '\0')
-
-	break;
 	c++;
 	}
 
-	for (; c  >= 0; c--)
+	for (c -= 1; c >= 0; c--)
 	{
 	_putchar(s[c]);
 	}
