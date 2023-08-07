@@ -92,7 +92,7 @@ void extract_words(char *str, char **matrix)
  * @str: string to split
  *
  * Return: pointer to an array of strings (success)
- *         or NULL (error)
+ * or NULL (error)
  */
 char **strtow(char *str)
 {
