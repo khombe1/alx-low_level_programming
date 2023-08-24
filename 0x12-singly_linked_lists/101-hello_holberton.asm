@@ -1,10 +1,13 @@
+lobal _start
 
-	global   main
-	  extern    printf
-main:
-	  mov   edi, format
-	  xor   eax, eax
-	  call  printf
-	  mov   eax, 0
-	  ret
-format: db `Hello, Holberton\n`,0
+section .text
+_start:
+  mov rdi, message
+  call printf
+
+  mov rax, 60
+  mov rdi, 0
+  syscall
+
+section .data
+message: db "Hello, Holberton", 10
