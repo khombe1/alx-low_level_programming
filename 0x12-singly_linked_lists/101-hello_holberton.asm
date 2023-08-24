@@ -1,4 +1,4 @@
-lobal _start
+global _start
 
 section .text
 _start:
